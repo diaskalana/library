@@ -63,7 +63,8 @@ addBookBtn.addEventListener('click', () => {
 xCircle.addEventListener('click', () => {
     dialog.close()
 })
-cancelBook.addEventListener('click', () => {
+cancelBook.addEventListener('click', (e) => {
+    e.preventDefault()
     dialog.close()
 })
 form.addEventListener('submit', () => {
