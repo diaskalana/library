@@ -4,8 +4,103 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Library</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./favicons/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <script defer src="script.js"></script>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1 class="logo">Odin Library</h1>
+    </header>
+    <div class="bookContainer">
+      <!-- <div class="bookCard">
+        <p>Title: <span class="cardTitle">Lorem ipsum dolor sit amet.</span></p>
+        <p>Author: <span class="cardAuthor">Lorem, ipsum dolor.</span></p>
+        <p># of Pages: <span class="cardPages">344</span> Pages</p>
+        <div class="cardBtnContainer">
+          <button class="cardRead">Read</button>
+          <button class="cardDelete">Delete</button>
+        </div>
+      </div> -->
+    </div>
+    <footer>
+      <div class="buttonContainer">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="100"
+          height="100"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="#000000"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="addBook"
+        >
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="12" y1="8" x2="12" y2="16"></line>
+          <line x1="8" y1="12" x2="16" y2="12"></line>
+        </svg>
+      </div>
+    </footer>
+    <dialog class="dialog">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="28"
+        height="28"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="#000000"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="x-circle"
+      >
+        <circle cx="12" cy="12" r="10"></circle>
+        <line x1="15" y1="9" x2="9" y2="15"></line>
+        <line x1="9" y1="9" x2="15" y2="15"></line>
+      </svg>
+      <form method="dialog">
+        <p class="dialogTitle">Add New Book</p>
+        <label for="title">Book Title:</label>
+        <input type="text" required id="title" />
+        <label for="author">Author Name:</label>
+        <input type="text" required id="author" />
+        <label for="pages">Number of Pages:</label>
+        <input type="number" min="0" required id="pages" />
+        <label for="read">Did you read it?</label>
+        <select id="read" required>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+        <div class="btnSet">
+          <button type="submit" id="saveBook">Save</button>
+          <button id="cancelBook" formnovalidate>Cancel</button>
+        </div>
+      </form>
+    </dialog>
+  </body>
 </html>

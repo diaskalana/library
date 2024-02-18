@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  background-color: #f5f5f5;
+  font-family: "Poppins", sans-serif;
+}
+select,
+button {
+  font-family: "Poppins", sans-serif;
+}
+header {
+  display: flex;
+  padding: 20px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  font-family: "Pacifico", cursive;
+  box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.1);
+}
+footer {
+  height: 100px;
+  width: 100%;
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.buttonContainer {
+  position: relative;
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+.addBook {
+  /* height: 100px;
+  width: 100px; */
+  position: absolute;
+  top: -50px;
+  border-radius: 50%;
+  fill: white;
+  cursor: pointer;
+}
+.bookContainer {
+  margin-bottom: 120px;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+label,
+input,
+select {
+  display: block;
+  width: 100%;
+}
+input,
+select {
+  height: 30px;
+  border-radius: 5px;
+  border: 2px solid black;
+  padding: 1px 2px;
+}
+input,
+select {
+  margin-bottom: 10px;
+}
+dialog {
+  padding: 50px 80px;
+  border-radius: 10px;
+  border: none;
+  width: 400px;
+  position: relative;
+
+  /* To center modal */
+  position: absolute;
+  float: left;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.1);
+}
+.x-circle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+.dialogTitle {
+  font-size: 1.5rem;
+  font-family: "Pacifico", cursive;
+  text-align: center;
+}
+.btnSet {
+  padding-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+.btnSet button {
+  width: 100%;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: black solid 2px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.btnSet button:hover {
+  background-color: black;
+  color: white;
+}
+::backdrop {
+  background-color: rgba(0, 0, 0, 0.16);
+}
+.bookCard {
+  background-color: white;
+  padding: 20px;
+  width: 300px;
+  height: 200px;
+  box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: auto;
+}
+.bookCard:hover {
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+.bookCard p {
+  margin-bottom: 10px;
+}
+.cardBtnContainer {
+  display: flex;
+  gap: 10px;
+}
+.cardTitle,
+.cardAuthor,
+.cardPages {
+  font-weight: 600;
+}
+.bookCard button {
+  background-color: transparent;
+  padding: 5px 10px;
+  border-radius: 3px;
+  border: black solid 2px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.cardDelete:hover {
+  background-color: red;
+  color: white;
+  border-color: red;
+}
+.cardRead:hover {
+  background-color: black;
+  color: white;
+}
